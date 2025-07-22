@@ -1,4 +1,4 @@
-"use client"; //"Dashbord button is only for the interviewer"
+"use client";
 
 import Link from "next/link";
 import { Button } from "./ui/button";
@@ -6,14 +6,7 @@ import { SparklesIcon } from "lucide-react";
 import { useUserRole } from "@/hooks/useUserRole";
 
 function DasboardBtn() {
-
-// let isCandidate=false;
-// let isInterviewer=true;
-
-
- const { isCandidate, isLoading } = useUserRole();
-
- //if (isCandidate) return null;  
+  const { isCandidate, isLoading } = useUserRole();
 
   if (isCandidate || isLoading) return null;
 
@@ -27,4 +20,3 @@ function DasboardBtn() {
   );
 }
 export default DasboardBtn;
- 
