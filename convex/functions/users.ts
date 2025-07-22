@@ -1,5 +1,7 @@
-import { v } from "convex/values";
-import { mutation, query } from "../_generated/server";
+/*
+
+   import { v } from "convex/values";
+import { mutation, query } from "./_generated/server";
 
 export const syncUser = mutation({
   args: {
@@ -45,3 +47,7 @@ export const getUserByClerkId = query({
     return user;
   },
 });
+
+
+
+*/
