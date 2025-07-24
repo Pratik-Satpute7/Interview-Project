@@ -1,3 +1,4 @@
+
 import StreamClientProvider from "@/components/providers/StreamClientProvider";
 
 function Layout({ children }: { children: React.ReactNode }) {
