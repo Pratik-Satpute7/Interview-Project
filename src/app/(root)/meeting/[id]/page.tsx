@@ -1,8 +1,4 @@
-export default function meetings (){
-    return(
-        <h1>meetin page</h1>
-    )
-}"use client";
+"use client";
 
 import LoaderUI from "@/components/LoaderUI";
 import MeetingRoom from "@/components/MeetingRoom";
@@ -14,7 +10,12 @@ import { useParams } from "next/navigation";
 import { useState } from "react";
 
 function MeetingPage() {
-  const { id } = useParams();
+  //const { id } = useParams();
+const params = useParams();
+const id = params?.id as string;
+
+
+
   const { isLoaded } = useUser();
   const { call, isCallLoading } = useGetCallById(id);
 
