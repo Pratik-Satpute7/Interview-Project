@@ -1,4 +1,8 @@
-"use client";
+export default function meetings (){
+    return(
+        <h1>meetin page</h1>
+    )
+}"use client";
 
 import LoaderUI from "@/components/LoaderUI";
 import MeetingRoom from "@/components/MeetingRoom";
